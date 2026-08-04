@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cynseling — Acompañamiento terapéutico humanista. Un espacio para comprenderte, aliviar tu carga emocional y volver a encontrarte con vos mismo. Sesiones individuales, grupos terapéuticos y talleres.">
+  <meta name="keywords" content="counseling, terapia humanista, acompañamiento emocional, Carl Rogers, sesiones individuales, grupos terapéuticos, autoestima, duelo, límites, menopausia">
+  <meta name="author" content="Cynseling">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cynseling — Acompañamiento Terapéutico Humanista">
+  <meta property="og:description" content="Un espacio para comprenderte, aliviar tu carga emocional y volver a encontrarte con vos mismo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-portrait.png">
+
+  <title>Cynseling — Acompañamiento Terapéutico Humanista</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <a href="#inicio" class="navbar__logo" aria-label="Cynseling - Inicio">
+        Cyn<span>seling</span>
+      </a>
+
+      <button class="navbar__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="navbar__menu" id="navbar-menu">
+        <a href="#inicio" class="navbar__link active">Inicio</a>
+        <a href="#sobre-mi" class="navbar__link">Sobre mí</a>
+        <a href="#servicios" class="navbar__link">Sesiones</a>
+        <a href="#grupos" class="navbar__link">Grupos</a>
+        <a href="#recursos" class="navbar__link">Recursos</a>
+        <a href="blog.html" class="navbar__link">Blog</a>
+        <a href="#contacto" class="navbar__cta">Reservar sesión</a>
+      </div>
+
+      <div class="navbar__overlay" id="navbar-overlay"></div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__badge">✨ Counseling humanista</span>
+        <h1 class="hero__title">
+          Un espacio para <em>comprenderte</em>, aliviar tu carga emocional y volver a encontrarte con vos mismo.
+        </h1>
+        <p class="hero__subtitle">
+          Acompaño a personas que atraviesan momentos difíciles, relaciones que duelen, cambios vitales, agotamiento emocional y procesos de transformación personal desde una mirada empática y profundamente humana.
+        </p>
+        <div class="hero__buttons">
+          <a href="#contacto" class="btn btn--primary btn--lg" id="hero-cta-reservar">
+            💜 Reservar una sesión
+          </a>
+          <a href="#grupos" class="btn btn--secondary btn--lg" id="hero-cta-grupos">
+            💜 Conocer los grupos terapéuticos
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <div class="hero__image-wrapper">
+          <img src="assets/images/hero-portrait.png" alt="Cynseling — Terapeuta sonriendo cálidamente en un espacio acogedor" loading="eager">
+        </div>
+        <div class="hero__float-card hero__float-card--top">
+          <div class="icon">🌿</div>
+          <div class="text">Calma y contención</div>
+        </div>
+        <div class="hero__float-card hero__float-card--bottom">
+          <div class="icon">💜</div>
+          <div class="text">Mirada empática</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ¿TE SENTÍS IDENTIFICADO? ==================== -->
+  <section class="section" id="identificado">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>¿Te sentís identificado?</h2>
+        <p>Tal vez estés viviendo algo de esto:</p>
+      </div>
+
+      <div class="identify__grid">
+        <div class="identify__item reveal reveal--delay-1">
+          <div class="identify__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+              <line x1="6" y1="1" x2="6" y2="4"/>
+              <line x1="10" y1="1" x2="10" y2="4"/>
+              <line x1="14" y1="1" x2="14" y2="4"/>
+            </svg>
+          </div>
+          <p class="identify__text">Te sentís agotado emocionalmente.</p>
+        </div>
+
+        <div class="identify__item reveal reveal--delay-2">
+          <div class="identify__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <p class="identify__text">Cuidás de todos y te olvidaste de vos.</p>
+        </div>
+
+        <div class="identify__item reveal reveal--delay-3">
+          <div class="identify__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <p class="identify__text">Sentís culpa por poner límites.</p>
+        </div>
+
+        <div class="identify__item reveal reveal--delay-1">
+          <div class="identify__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <p class="identify__text">Vivís relaciones familiares que te hacen sufrir.</p>
+        </div>
+
+        <div class="identify__item reveal reveal--delay-2">
+          <div class="identify__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"/>
+              <polyline points="1 20 1 14 7 14"/>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+            </svg>
+          </div>
+          <p class="identify__text">Estás atravesando cambios y no sabés cómo adaptarte.</p>
+        </div>
+
+        <div class="identify__item reveal reveal--delay-3">
+          <div class="identify__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+          </div>
+          <p class="identify__text">Sentís que nadie entiende realmente lo que te pasa.</p>
+        </div>
+      </div>
+
+      <div class="identify__cta reveal">
+        <h3>No tenés que atravesarlo solo.</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MI MIRADA ==================== -->
+  <section class="section mirada" id="mirada">
+    <div class="container">
+      <div class="mirada__image reveal reveal--left">
+        <img src="assets/images/about-portrait.png" alt="Retrato cercano — mirada empática y cálida" loading="lazy">
+      </div>
+
+      <div class="mirada__content">
+        <span class="hero__badge reveal">🌿 Mi mirada</span>
+        <h2 class="reveal">Creo profundamente que las personas tienen dentro de sí los recursos para crecer y encontrar nuevas maneras de vivir.</h2>
+        <p class="reveal reveal--delay-1">
+          No siempre podemos cambiar lo que nos ocurre. Pero sí podemos cambiar la forma en que lo comprendemos, lo transitamos y nos relacionamos con ello.
+        </p>
+        <p class="reveal reveal--delay-2">
+          Mi trabajo no consiste en decirte qué hacer, sino en acompañarte a descubrir tus propios recursos, comprender tus emociones y encontrar un camino más amable con vos mismo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CÓMO PUEDO ACOMPAÑARTE ==================== -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Cómo puedo acompañarte</h2>
+        <p>Diferentes espacios para acompañar tu proceso de transformación personal.</p>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card reveal reveal--delay-1">
+          <div class="service-card__icon">🌸</div>
+          <h3 class="service-card__title">Sesiones individuales</h3>
+          <p class="service-card__desc">
+            Un espacio seguro para hablar, comprenderte y encontrar nuevas maneras de atravesar aquello que hoy te duele.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal--delay-2" id="grupos">
+          <div class="service-card__icon">🤝</div>
+          <h3 class="service-card__title">Grupos terapéuticos</h3>
+          <p class="service-card__desc">
+            Descubrir que no estás solo y compartir con otras personas que viven experiencias similares puede ser profundamente transformador.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal--delay-3">
+          <div class="service-card__icon">✨</div>
+          <h3 class="service-card__title">Talleres y encuentros</h3>
+          <p class="service-card__desc">
+            Espacios para reflexionar, aprender herramientas emocionales y crecer en comunidad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ESPECIALIDADES ==================== -->
+  <section class="section section--alt" id="especialidades">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Especialidades</h2>
+        <p>Áreas en las que puedo acompañarte con especial profundidad y experiencia.</p>
+      </div>
+
+      <div class="specialties__grid">
+        <div class="specialty-item reveal reveal--delay-1">
+          <div class="specialty-item__icon">💜</div>
+          <p class="specialty-item__text">Relaciones familiares difíciles</p>
+        </div>
+
+        <div class="specialty-item reveal reveal--delay-2">
+          <div class="specialty-item__icon">🌱</div>
+          <p class="specialty-item__text">Autoestima y crecimiento personal</p>
+        </div>
+
+        <div class="specialty-item reveal reveal--delay-3">
+          <div class="specialty-item__icon">🤲</div>
+          <p class="specialty-item__text">Cuidadores de padres mayores</p>
+        </div>
+
+        <div class="specialty-item reveal reveal--delay-1">
+          <div class="specialty-item__icon">🦋</div>
+          <p class="specialty-item__text">Menopausia y cambios vitales</p>
+        </div>
+
+        <div class="specialty-item reveal reveal--delay-2">
+          <div class="specialty-item__icon">🕊️</div>
+          <p class="specialty-item__text">Duelos y pérdidas</p>
+        </div>
+
+        <div class="specialty-item reveal reveal--delay-3">
+          <div class="specialty-item__icon">🛡️</div>
+          <p class="specialty-item__text">Límites y culpa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FRASE INSPIRADORA ==================== -->
+  <div class="quote-banner">
+    <div class="container">
+      <p class="quote-banner__text reveal">
+        No se trata de cambiar quién sos, sino de comprenderte con más profundidad.
+      </p>
+    </div>
+  </div>
+
+  <!-- ==================== TESTIMONIOS ==================== -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Lo que dicen quienes me eligieron</h2>
+        <p>Palabras que reflejan la experiencia del acompañamiento.</p>
+      </div>
+
+      <div class="testimonials__carousel reveal">
+        <button class="testimonials__nav testimonials__nav--prev" aria-label="Testimonio anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="testimonials__track">
+          <div class="testimonial-card">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote">"</div>
+              <p class="testimonial-card__text">
+                Por primera vez sentí que alguien podía poner en palabras lo que estaba viviendo. Fue un alivio inmenso.
+              </p>
+              <p class="testimonial-card__author">— María L.</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote">"</div>
+              <p class="testimonial-card__text">
+                Sus videos me hicieron sentir acompañada en un momento en que creía que nadie podía entenderme.
+              </p>
+              <p class="testimonial-card__author">— Carolina S.</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote">"</div>
+              <p class="testimonial-card__text">
+                Aprendí a mirarme con más amabilidad. Ese solo cambio transformó mis relaciones y mi forma de vivir.
+              </p>
+              <p class="testimonial-card__author">— Andrea P.</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote">"</div>
+              <p class="testimonial-card__text">
+                El grupo terapéutico fue una experiencia sanadora. Descubrí que no estaba sola y que mis sentimientos eran válidos.
+              </p>
+              <p class="testimonial-card__author">— Laura M.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="testimonials__nav testimonials__nav--next" aria-label="Siguiente testimonio">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="testimonials__dots">
+          <button class="testimonials__dot active" aria-label="Testimonio 1"></button>
+          <button class="testimonials__dot" aria-label="Testimonio 2"></button>
+          <button class="testimonials__dot" aria-label="Testimonio 3"></button>
+          <button class="testimonials__dot" aria-label="Testimonio 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE MÍ ==================== -->
+  <section class="section about section--alt" id="sobre-mi">
+    <div class="container">
+      <div class="about__image reveal reveal--left">
+        <img src="assets/images/hero-portrait.png" alt="Sobre mí — Terapeuta en su espacio de trabajo" loading="lazy">
+      </div>
+
+      <div class="about__content">
+        <span class="hero__badge reveal">🌿 Sobre mí</span>
+        <h2 class="reveal">Un camino de acompañamiento que comienza con la propia historia</h2>
+        <p class="reveal reveal--delay-1">
+          Soy counselor con enfoque centrado en la persona, inspirada en la filosofía de Carl Rogers. Creo que cada persona tiene dentro de sí la capacidad de encontrar su propio camino — mi rol es acompañar ese proceso desde la escucha, la empatía y el respeto profundo por quien sos.
+        </p>
+        <p class="reveal reveal--delay-2">
+          Mi propia experiencia migratoria me enseñó lo que significa atravesar cambios profundos, extrañar, reinventarse y descubrir una versión de mí que no conocía. Esa vivencia me conecta con quienes están en proceso de transformación y me permite acompañar desde un lugar genuino y humano.
+        </p>
+        <p class="reveal reveal--delay-3">
+          Mi pasión es acompañar a personas que sienten que algo dentro suyo necesita ser escuchado, comprendido y cuidado.
+        </p>
+
+        <div class="about__tags reveal reveal--delay-4">
+          <span class="about__tag">Counselor</span>
+          <span class="about__tag">Enfoque Centrado en la Persona</span>
+          <span class="about__tag">Carl Rogers</span>
+          <span class="about__tag">Acompañamiento Humanista</span>
+          <span class="about__tag">Experiencia Migratoria</span>
+          <span class="about__tag">Procesos de Cambio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FRASE INSPIRADORA 2 ==================== -->
+  <div class="quote-banner">
+    <div class="container">
+      <p class="quote-banner__text reveal">
+        A veces el alivio comienza cuando alguien pone palabras a lo que estamos sintiendo.
+      </p>
+    </div>
+  </div>
+
+  <!-- ==================== RECURSOS GRATUITOS ==================== -->
+  <section class="section" id="recursos">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Recursos gratuitos</h2>
+        <p>Herramientas y contenido para acompañarte en tu camino de autoconocimiento.</p>
+      </div>
+
+      <div class="resources__grid">
+        <div class="resource-card reveal reveal--delay-1">
+          <div class="resource-card__icon">📺</div>
+          <h3 class="resource-card__title">Canal de YouTube</h3>
+          <p class="resource-card__desc">
+            Videos sobre relaciones, emociones, límites y crecimiento personal. Un espacio donde sentirte acompañado.
+          </p>
+          <a href="#" class="resource-card__link" target="_blank" rel="noopener noreferrer">
+            Ver canal →
+          </a>
+        </div>
+
+        <div class="resource-card reveal reveal--delay-2">
+          <div class="resource-card__icon">📖</div>
+          <h3 class="resource-card__title">Ebook gratuito</h3>
+          <p class="resource-card__desc">
+            Una guía para empezar a comprender tus emociones y desarrollar herramientas de bienestar emocional.
+          </p>
+          <a href="#" class="resource-card__link">
+            Descargar →
+          </a>
+        </div>
+
+        <div class="resource-card reveal reveal--delay-3">
+          <div class="resource-card__icon">💌</div>
+          <h3 class="resource-card__title">Newsletter</h3>
+          <p class="resource-card__desc">
+            Reflexiones semanales, herramientas prácticas y contenido exclusivo directamente en tu correo.
+          </p>
+          <a href="#" class="resource-card__link">
+            Suscribirme →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA FINAL ==================== -->
+  <section class="cta-final" id="contacto">
+    <div class="cta-final__content reveal">
+      <h2 class="cta-final__title">
+        A veces lo que más necesitamos es un espacio donde sentirnos comprendidos.
+      </h2>
+      <p class="cta-final__text">
+        Si sentís que este puede ser ese espacio para vos, estaré encantada de acompañarte.
+      </p>
+      <a href="#" class="btn btn--ghost btn--lg" id="cta-final-reservar">
+        💜 Reservar una primera sesión
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__brand">
+        <div class="footer__logo">Cynseling</div>
+        <p class="footer__desc">
+          Un espacio para mirarte con más amabilidad. Acompañamiento terapéutico humanista centrado en la persona.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer__title">Navegación</h4>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="#inicio" class="footer__link">Inicio</a>
+          <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+          <a href="#servicios" class="footer__link">Sesiones</a>
+          <a href="#grupos" class="footer__link">Grupos</a>
+          <a href="#recursos" class="footer__link">Recursos</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 class="footer__title">Recursos</h4>
+        <nav class="footer__links">
+          <a href="blog.html" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">YouTube</a>
+          <a href="#" class="footer__link">Ebook</a>
+          <a href="#" class="footer__link">Newsletter</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 class="footer__title">Contacto</h4>
+        <div class="footer__links">
+          <a href="mailto:hola@cynseling.com" class="footer__link">hola@cynseling.com</a>
+          <a href="#contacto" class="footer__link">Reservar sesión</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        © 2026 Cynseling. Todos los derechos reservados. Hecho con 💜
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cynseling",
+    "description": "Acompañamiento terapéutico humanista centrado en la persona. Sesiones individuales, grupos terapéuticos y talleres.",
+    "url": "https://cynseling.com",
+    "image": "assets/images/hero-portrait.png",
+    "priceRange": "$$",
+    "areaServed": "ES",
+    "serviceType": ["Counseling", "Terapia humanista", "Grupos terapéuticos"],
+    "founder": {
+      "@type": "Person",
+      "name": "Cynseling",
+      "jobTitle": "Counselor"
+    }
+  }
+  </script>
+</body>
+</html>
