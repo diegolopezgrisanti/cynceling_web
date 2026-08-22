@@ -1730,3 +1730,16 @@ p {
   background: var(--color-primary);
   color: var(--color-white);
 }
+.navbar__logo-img {
+  max-height: 120px;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  transition: max-height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar__logo-img {
+    max-height: 80px;
+  }
+}
