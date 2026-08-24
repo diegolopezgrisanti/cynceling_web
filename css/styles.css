@@ -948,7 +948,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
   gap: var(--space-3xl);
-  align-items: center;
+  align-items: start;
 }
 
 .about__image {
@@ -959,6 +959,7 @@ p {
   max-width: 420px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 10.5rem;
 }
 
 .about__image img {
@@ -1577,6 +1578,7 @@ p {
   .about__image {
     max-width: 400px;
     margin: 0 auto;
+    margin-top: 0;
   }
 
   .about__tags {
