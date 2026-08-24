@@ -309,6 +309,7 @@ p {
   border-radius: var(--radius-full);
   transition: all var(--transition-base);
   box-shadow: var(--shadow-sm);
+  text-align: center;
 }
 
 .navbar__cta:hover {
@@ -1515,6 +1516,11 @@ p {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1024px) {
+  .hero {
+    min-height: auto;
+    padding: calc(100px + var(--space-3xl)) 0 var(--space-4xl);
+  }
+
   .hero .container {
     grid-template-columns: 1fr;
     text-align: center;
