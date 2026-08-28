@@ -135,7 +135,19 @@ function initTestimonialsCarousel() {
   const cards = track.querySelectorAll('.testimonial-card');
   let currentIndex = 0;
   let autoplayTimer;
-  const autoplayInterval = 6000;
+
+  function getDynamicInterval() {
+    const activeCard = cards[currentIndex];
+    if (activeCard) {
+      const textElement = activeCard.querySelector('.testimonial-card__text');
+      if (textElement) {
+        const charCount = textElement.textContent.trim().length;
+        // 50ms por carácter, con un mínimo de 5000ms
+        return Math.max(5000, charCount * 50);
+      }
+    }
+    return 10000; // Valor por defecto
+  }
 
   function goTo(index) {
     if (index < 0) index = cards.length - 1;
@@ -160,11 +172,14 @@ function initTestimonialsCarousel() {
 
   function startAutoplay() {
     stopAutoplay();
-    autoplayTimer = setInterval(next, autoplayInterval);
+    autoplayTimer = setTimeout(() => {
+      next();
+      startAutoplay();
+    }, getDynamicInterval());
   }
 
   function stopAutoplay() {
-    if (autoplayTimer) clearInterval(autoplayTimer);
+    if (autoplayTimer) clearTimeout(autoplayTimer);
   }
 
   // Dot clicks
